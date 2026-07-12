@@ -7,7 +7,7 @@ import xarray as xr
 
 
 INPUT_FILE = Path("data/uk_ostia_sst.nc")
-OUTPUT_FILE = Path("public/uk-water-temperatures.json")
+OUTPUT_FILE = Path("docs/uk-water-temperatures.json")
 
 LOCATIONS = [
     {"name": "Bournemouth", "lat": 50.7192, "lon": -1.8808, "sample_lat": 50.66, "sample_lon": -1.88},
