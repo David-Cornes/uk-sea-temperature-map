@@ -70,7 +70,10 @@ def main():
     ds = xr.open_dataset(INPUT_FILE)
     sst = ds["analysed_sst"]
 
+    data_time = None
+
     if "time" in sst.dims:
+        data_time = str(ds["time"].values[-1])
         sst = sst.isel(time=-1)
 
     results = []
@@ -104,6 +107,7 @@ def main():
 
     output = {
         "updated_utc": datetime.now(timezone.utc).isoformat(),
+        "data_time_utc": data_time,
         "source": "Copernicus Marine OSTIA / Met Office",
         "product_id": "SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001",
         "dataset_id": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
