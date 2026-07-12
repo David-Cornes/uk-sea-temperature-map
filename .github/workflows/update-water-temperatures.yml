@@ -1,0 +1,57 @@
+name: Update UK Water Temperatures
+
+on:
+  schedule:
+    - cron: "30 13 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-water-temperatures:
+    runs-on: ubuntu-latest
+
+    env:
+      COPERNICUSMARINE_SERVICE_USERNAME: ${{ secrets.COPERNICUSMARINE_SERVICE_USERNAME }}
+      COPERNICUSMARINE_SERVICE_PASSWORD: ${{ secrets.COPERNICUSMARINE_SERVICE_PASSWORD }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install copernicusmarine xarray netCDF4 h5netcdf h5py pandas numpy
+
+      - name: Download latest UK OSTIA SST subset
+        run: |
+          mkdir -p data
+          copernicusmarine subset \
+            --dataset-id METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2 \
+            --variable analysed_sst \
+            --minimum-longitude -11 \
+            --maximum-longitude 3 \
+            --minimum-latitude 49 \
+            --maximum-latitude 61 \
+            --output-directory ./data \
+            --output-filename uk_ostia_sst.nc \
+            --overwrite
+
+      - name: Build JSON
+        run: |
+          python make_water_temp_json.py
+
+      - name: Commit updated JSON
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add public/uk-water-temperatures.json
+          git commit -m "Update UK water temperatures" || echo "No changes to commit"
+          git push
