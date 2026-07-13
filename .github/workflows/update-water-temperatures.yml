@@ -1,8 +1,9 @@
 name: Update UK Water Temperatures
 
+
 on:
   schedule:
-    - cron: "30 13 * * *"
+    - cron: "0 07 * * *"   # 7am UTC
   workflow_dispatch:
 
 permissions:
