@@ -1,5 +1,5 @@
 {
-  "updated_utc": "2026-07-20T12:34:45.974565+00:00",
+  "updated_utc": "2026-07-20T12:39:17.519875+00:00",
   "data_time_utc": "2026-07-19T00:00:00.000000000",
   "source": "Copernicus Marine OSTIA / Met Office",
   "product_id": "SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001",
@@ -10,8 +10,8 @@
       "location": "Bournemouth",
       "lat": 50.7192,
       "lon": -1.8808,
-      "sample_lat": 50.66,
-      "sample_lon": -1.88,
+      "sample_lat": 50.67499923706055,
+      "sample_lon": -1.875,
       "temperature_c": 20.3,
       "advice": {
         "label": "Very warm",
@@ -23,8 +23,8 @@
       "location": "Brighton",
       "lat": 50.8225,
       "lon": -0.1372,
-      "sample_lat": 50.76,
-      "sample_lon": -0.13,
+      "sample_lat": 50.775001525878906,
+      "sample_lon": -0.125,
       "temperature_c": 19.5,
       "advice": {
         "label": "Warm",
@@ -36,8 +36,8 @@
       "location": "Plymouth",
       "lat": 50.3755,
       "lon": -4.1427,
-      "sample_lat": 50.3,
-      "sample_lon": -4.1,
+      "sample_lat": 50.275001525878906,
+      "sample_lon": -4.125,
       "temperature_c": 18.6,
       "advice": {
         "label": "Warm",
@@ -49,8 +49,8 @@
       "location": "Newquay",
       "lat": 50.4155,
       "lon": -5.0737,
-      "sample_lat": 50.4155,
-      "sample_lon": -5.0737,
+      "sample_lat": 50.42499923706055,
+      "sample_lon": -5.074999809265137,
       "temperature_c": 17.2,
       "advice": {
         "label": "Warm",
@@ -62,8 +62,8 @@
       "location": "Croyde",
       "lat": 51.13,
       "lon": -4.235,
-      "sample_lat": 51.13,
-      "sample_lon": -4.235,
+      "sample_lat": 51.125,
+      "sample_lon": -4.224999904632568,
       "temperature_c": 17.8,
       "advice": {
         "label": "Warm",
@@ -75,8 +75,8 @@
       "location": "St Ives",
       "lat": 50.214,
       "lon": -5.48,
-      "sample_lat": 50.214,
-      "sample_lon": -5.48,
+      "sample_lat": 50.224998474121094,
+      "sample_lon": -5.474999904632568,
       "temperature_c": 17.3,
       "advice": {
         "label": "Warm",
@@ -88,8 +88,8 @@
       "location": "Bude",
       "lat": 50.828,
       "lon": -4.544,
-      "sample_lat": 50.84,
-      "sample_lon": -4.62,
+      "sample_lat": 50.82500076293945,
+      "sample_lon": -4.625,
       "temperature_c": 17.4,
       "advice": {
         "label": "Warm",
@@ -101,8 +101,8 @@
       "location": "Swansea",
       "lat": 51.6214,
       "lon": -3.9436,
-      "sample_lat": 51.55,
-      "sample_lon": -3.98,
+      "sample_lat": 51.525001525878906,
+      "sample_lon": -3.9749999046325684,
       "temperature_c": 19.6,
       "advice": {
         "label": "Warm",
@@ -114,8 +114,8 @@
       "location": "Pembrokeshire",
       "lat": 51.6726,
       "lon": -5.034,
-      "sample_lat": 51.6726,
-      "sample_lon": -5.034,
+      "sample_lat": 51.67499923706055,
+      "sample_lon": -5.025000095367432,
       "temperature_c": 17.2,
       "advice": {
         "label": "Warm",
@@ -127,8 +127,8 @@
       "location": "Scarborough",
       "lat": 54.2831,
       "lon": -0.3998,
-      "sample_lat": 54.2831,
-      "sample_lon": -0.3998,
+      "sample_lat": 54.275001525878906,
+      "sample_lon": -0.375,
       "temperature_c": 14.7,
       "advice": {
         "label": "Mild",
@@ -140,8 +140,8 @@
       "location": "Tynemouth",
       "lat": 55.017,
       "lon": -1.423,
-      "sample_lat": 55.017,
-      "sample_lon": -1.423,
+      "sample_lat": 55.025001525878906,
+      "sample_lon": -1.4249999523162842,
       "temperature_c": 15.5,
       "advice": {
         "label": "Mild",
@@ -153,8 +153,8 @@
       "location": "Aberdeen",
       "lat": 57.1497,
       "lon": -2.0943,
-      "sample_lat": 57.1497,
-      "sample_lon": -2.0943,
+      "sample_lat": 57.125,
+      "sample_lon": -2.075000047683716,
       "temperature_c": 13.5,
       "advice": {
         "label": "Cool",
@@ -166,8 +166,8 @@
       "location": "Thurso",
       "lat": 58.5933,
       "lon": -3.5221,
-      "sample_lat": 58.5933,
-      "sample_lon": -3.5221,
+      "sample_lat": 58.57500076293945,
+      "sample_lon": -3.5250000953674316,
       "temperature_c": 12.8,
       "advice": {
         "label": "Cool",
@@ -179,8 +179,8 @@
       "location": "Oban",
       "lat": 56.4154,
       "lon": -5.4718,
-      "sample_lat": 56.4154,
-      "sample_lon": -5.4718,
+      "sample_lat": 56.42499923706055,
+      "sample_lon": -5.474999904632568,
       "temperature_c": 13.3,
       "advice": {
         "label": "Cool",
@@ -192,8 +192,8 @@
       "location": "Portrush",
       "lat": 55.2047,
       "lon": -6.6527,
-      "sample_lat": 55.2047,
-      "sample_lon": -6.6527,
+      "sample_lat": 55.224998474121094,
+      "sample_lon": -6.675000190734863,
       "temperature_c": 14.4,
       "advice": {
         "label": "Mild",
@@ -205,9 +205,9 @@
       "location": "Dunbar",
       "lat": 56.0027,
       "lon": -2.5167,
-      "sample_lat": 56.0,
-      "sample_lon": -2.45,
-      "temperature_c": 14.4,
+      "sample_lat": 55.974998474121094,
+      "sample_lon": -2.4749999046325684,
+      "temperature_c": 14.0,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -218,9 +218,9 @@
       "location": "Lossiemouth",
       "lat": 57.7219,
       "lon": -3.2834,
-      "sample_lat": 57.75,
-      "sample_lon": -3.25,
-      "temperature_c": 14.4,
+      "sample_lat": 57.724998474121094,
+      "sample_lon": -3.2750000953674316,
+      "temperature_c": 14.5,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -231,17 +231,21 @@
       "location": "Portree",
       "lat": 57.4125,
       "lon": -6.1942,
-      "sample_lat": 57.45,
-      "sample_lon": -6.25,
-      "temperature_c": null,
-      "advice": null
+      "sample_lat": 57.474998474121094,
+      "sample_lon": -6.375,
+      "temperature_c": 13.7,
+      "advice": {
+        "label": "Cool",
+        "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
+        "collection": "/collections/4mm-wetsuits"
+      }
     },
     {
       "location": "Outer Hebrides",
       "lat": 57.76,
       "lon": -7.02,
-      "sample_lat": 57.8,
-      "sample_lon": -7.2,
+      "sample_lat": 57.775001525878906,
+      "sample_lon": -7.175000190734863,
       "temperature_c": 14.4,
       "advice": {
         "label": "Mild",
@@ -253,9 +257,9 @@
       "location": "Shetland",
       "lat": 60.154,
       "lon": -1.149,
-      "sample_lat": 60.2,
-      "sample_lon": -1.1,
-      "temperature_c": 12.7,
+      "sample_lat": 60.224998474121094,
+      "sample_lon": -1.125,
+      "temperature_c": 12.6,
       "advice": {
         "label": "Cool",
         "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
@@ -266,8 +270,8 @@
       "location": "Orkney",
       "lat": 58.9847,
       "lon": -2.959,
-      "sample_lat": 59.05,
-      "sample_lon": -2.95,
+      "sample_lat": 59.025001525878906,
+      "sample_lon": -2.9749999046325684,
       "temperature_c": 13.1,
       "advice": {
         "label": "Cool",
@@ -279,8 +283,8 @@
       "location": "Dublin",
       "lat": 53.3498,
       "lon": -6.2603,
-      "sample_lat": 53.35,
-      "sample_lon": -6.05,
+      "sample_lat": 53.32500076293945,
+      "sample_lon": -6.074999809265137,
       "temperature_c": 17.3,
       "advice": {
         "label": "Warm",
@@ -292,17 +296,21 @@
       "location": "Galway",
       "lat": 53.2707,
       "lon": -9.0568,
-      "sample_lat": 53.25,
-      "sample_lon": -9.2,
-      "temperature_c": null,
-      "advice": null
+      "sample_lat": 53.224998474121094,
+      "sample_lon": -9.175000190734863,
+      "temperature_c": 17.2,
+      "advice": {
+        "label": "Warm",
+        "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
+        "collection": "/collections/summer-wetsuits"
+      }
     },
     {
       "location": "Cork",
       "lat": 51.8985,
       "lon": -8.4756,
-      "sample_lat": 51.8,
-      "sample_lon": -8.3,
+      "sample_lat": 51.775001525878906,
+      "sample_lon": -8.324999809265137,
       "temperature_c": 19.1,
       "advice": {
         "label": "Warm",
@@ -314,18 +322,22 @@
       "location": "Arran",
       "lat": 55.581,
       "lon": -5.208,
-      "sample_lat": 55.55,
-      "sample_lon": -5.35,
-      "temperature_c": null,
-      "advice": null
+      "sample_lat": 55.525001525878906,
+      "sample_lon": -5.375,
+      "temperature_c": 15.5,
+      "advice": {
+        "label": "Mild",
+        "advice": "3/2mm full wetsuit is usually suitable.",
+        "collection": "/collections/3mm-wetsuits"
+      }
     },
     {
       "location": "Isle of Man",
       "lat": 54.2361,
       "lon": -4.5481,
-      "sample_lat": 54.2,
-      "sample_lon": -4.65,
-      "temperature_c": 15.1,
+      "sample_lat": 54.224998474121094,
+      "sample_lon": -4.675000190734863,
+      "temperature_c": 15.0,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -336,8 +348,8 @@
       "location": "Whitehaven",
       "lat": 54.5489,
       "lon": -3.5841,
-      "sample_lat": 54.55,
-      "sample_lon": -3.7,
+      "sample_lat": 54.525001525878906,
+      "sample_lon": -3.7249999046325684,
       "temperature_c": 17.6,
       "advice": {
         "label": "Warm",
@@ -349,9 +361,9 @@
       "location": "Barrow-in-Furness",
       "lat": 54.1109,
       "lon": -3.2276,
-      "sample_lat": 54.05,
-      "sample_lon": -3.25,
-      "temperature_c": 18.6,
+      "sample_lat": 54.025001525878906,
+      "sample_lon": -3.2750000953674316,
+      "temperature_c": 18.5,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -362,9 +374,9 @@
       "location": "Rhyl",
       "lat": 53.3191,
       "lon": -3.4916,
-      "sample_lat": 53.35,
-      "sample_lon": -3.5,
-      "temperature_c": 19.6,
+      "sample_lat": 53.32500076293945,
+      "sample_lon": -3.5250000953674316,
+      "temperature_c": 19.5,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -375,8 +387,8 @@
       "location": "Colwyn Bay",
       "lat": 53.2948,
       "lon": -3.7276,
-      "sample_lat": 53.33,
-      "sample_lon": -3.72,
+      "sample_lat": 53.32500076293945,
+      "sample_lon": -3.7249999046325684,
       "temperature_c": 19.0,
       "advice": {
         "label": "Warm",
@@ -388,8 +400,8 @@
       "location": "Holyhead",
       "lat": 53.3106,
       "lon": -4.633,
-      "sample_lat": 53.35,
-      "sample_lon": -4.7,
+      "sample_lat": 53.32500076293945,
+      "sample_lon": -4.675000190734863,
       "temperature_c": 16.2,
       "advice": {
         "label": "Mild",
@@ -401,8 +413,8 @@
       "location": "Aberystwyth",
       "lat": 52.4153,
       "lon": -4.0829,
-      "sample_lat": 52.42,
-      "sample_lon": -4.2,
+      "sample_lat": 52.42499923706055,
+      "sample_lon": -4.175000190734863,
       "temperature_c": 19.3,
       "advice": {
         "label": "Warm",
@@ -414,9 +426,9 @@
       "location": "Fishguard",
       "lat": 51.9936,
       "lon": -4.9769,
-      "sample_lat": 52.0,
-      "sample_lon": -5.05,
-      "temperature_c": 16.0,
+      "sample_lat": 51.974998474121094,
+      "sample_lon": -5.074999809265137,
+      "temperature_c": 15.9,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -427,8 +439,8 @@
       "location": "Southend-on-Sea",
       "lat": 51.5459,
       "lon": 0.7077,
-      "sample_lat": 51.52,
-      "sample_lon": 0.85,
+      "sample_lat": 51.525001525878906,
+      "sample_lon": 0.875,
       "temperature_c": 20.8,
       "advice": {
         "label": "Very warm",
@@ -440,9 +452,9 @@
       "location": "Great Yarmouth",
       "lat": 52.6083,
       "lon": 1.7305,
-      "sample_lat": 52.62,
-      "sample_lon": 1.85,
-      "temperature_c": 18.2,
+      "sample_lat": 52.625,
+      "sample_lon": 1.8250000476837158,
+      "temperature_c": 18.3,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -453,8 +465,8 @@
       "location": "Wells-next-the-Sea",
       "lat": 52.9543,
       "lon": 0.8513,
-      "sample_lat": 53.02,
-      "sample_lon": 0.9,
+      "sample_lat": 53.025001525878906,
+      "sample_lon": 0.875,
       "temperature_c": 18.2,
       "advice": {
         "label": "Warm",
@@ -466,8 +478,8 @@
       "location": "Grimsby",
       "lat": 53.5675,
       "lon": -0.0808,
-      "sample_lat": 53.58,
-      "sample_lon": 0.05,
+      "sample_lat": 53.57500076293945,
+      "sample_lon": 0.02500000037252903,
       "temperature_c": 18.4,
       "advice": {
         "label": "Warm",
@@ -479,10 +491,14 @@
       "location": "Hugh Town",
       "lat": 49.9146,
       "lon": -6.3143,
-      "sample_lat": 49.9,
-      "sample_lon": -6.35,
-      "temperature_c": null,
-      "advice": null
+      "sample_lat": 49.92499923706055,
+      "sample_lon": -6.375,
+      "temperature_c": 18.1,
+      "advice": {
+        "label": "Warm",
+        "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
+        "collection": "/collections/summer-wetsuits"
+      }
     }
   ]
 }
