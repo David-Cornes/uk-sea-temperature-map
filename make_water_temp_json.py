@@ -88,7 +88,34 @@ def wetsuit_advice(temp_c: float) -> dict:
         "collection": "/collections/rash-vests",
     }
 
+def get_nearest_valid_sst_c(sst, latitude, longitude, search_radius=3):
+    """
+    Try the nearest grid cell first.
+    If it is land/masked/null, search nearby grid cells and return the first valid sea temperature.
+    """
 
+    lat_values = sst["latitude"].values
+    lon_values = sst["longitude"].values
+
+    lat_index = int(np.abs(lat_values - latitude).argmin())
+    lon_index = int(np.abs(lon_values - longitude).argmin())
+
+    # Search nearby cells in expanding squares
+    for radius in range(search_radius + 1):
+        for i in range(lat_index - radius, lat_index + radius + 1):
+            for j in range(lon_index - radius, lon_index + radius + 1):
+                if i < 0 or j < 0:
+                    continue
+                if i >= len(lat_values) or j >= len(lon_values):
+                    continue
+
+                value_k = sst.isel(latitude=i, longitude=j).item()
+
+                if value_k is not None and not np.isnan(value_k):
+                    return round(float(value_k) - 273.15, 1), float(lat_values[i]), float(lon_values[j])
+
+    return None, None, None
+    
 def main():
     ds = xr.open_dataset(INPUT_FILE)
     sst = ds["analysed_sst"]
@@ -105,25 +132,24 @@ def main():
         sample_lat = loc.get("sample_lat", loc["lat"])
         sample_lon = loc.get("sample_lon", loc["lon"])
 
-        value_k = sst.sel(
-            latitude=sample_lat,
-            longitude=sample_lon,
-            method="nearest"
-        ).item()
+        temp_c, actual_sample_lat, actual_sample_lon = get_nearest_valid_sst_c(
+            sst,
+            sample_lat,
+            sample_lon,
+            search_radius=5
+        )
 
-        if value_k is None or np.isnan(value_k):
-            temp_c = None
+        if temp_c is None:
             advice = None
         else:
-            temp_c = round(float(value_k) - 273.15, 1)
             advice = wetsuit_advice(temp_c)
 
         results.append({
             "location": loc["name"],
             "lat": loc["lat"],
             "lon": loc["lon"],
-            "sample_lat": sample_lat,
-            "sample_lon": sample_lon,
+            "sample_lat": actual_sample_lat if actual_sample_lat is not None else sample_lat,
+            "sample_lon": actual_sample_lon if actual_sample_lon is not None else sample_lon,
             "temperature_c": temp_c,
             "advice": advice,
         })
