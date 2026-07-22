@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-07-21T09:33:26.818129+00:00",
-  "data_time_utc": "2026-07-20T00:00:00.000000000",
+  "updated_utc": "2026-07-22T09:33:23.965471+00:00",
+  "data_time_utc": "2026-07-21T00:00:00.000000000",
   "source": "Copernicus Marine OSTIA / Met Office",
   "product_id": "SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001",
   "dataset_id": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
@@ -12,11 +12,11 @@
       "lon": -1.8808,
       "sample_lat": 50.67499923706055,
       "sample_lon": -1.875,
-      "temperature_c": 20.1,
+      "temperature_c": 19.7,
       "advice": {
-        "label": "Very warm",
-        "advice": "Shorty wetsuit, rash vest or wetsuit top may be enough.",
-        "collection": "/collections/rash-vests"
+        "label": "Warm",
+        "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
+        "collection": "/collections/summer-wetsuits"
       }
     },
     {
@@ -25,7 +25,7 @@
       "lon": -0.1372,
       "sample_lat": 50.775001525878906,
       "sample_lon": -0.125,
-      "temperature_c": 19.5,
+      "temperature_c": 19.2,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -38,7 +38,7 @@
       "lon": -4.1427,
       "sample_lat": 50.275001525878906,
       "sample_lon": -4.125,
-      "temperature_c": 18.6,
+      "temperature_c": 18.8,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -51,7 +51,7 @@
       "lon": -5.0737,
       "sample_lat": 50.42499923706055,
       "sample_lon": -5.074999809265137,
-      "temperature_c": 17.4,
+      "temperature_c": 17.5,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -90,7 +90,7 @@
       "lon": -4.544,
       "sample_lat": 50.82500076293945,
       "sample_lon": -4.625,
-      "temperature_c": 17.5,
+      "temperature_c": 17.7,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -103,7 +103,7 @@
       "lon": -3.9436,
       "sample_lat": 51.525001525878906,
       "sample_lon": -3.9749999046325684,
-      "temperature_c": 19.9,
+      "temperature_c": 19.8,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -116,7 +116,7 @@
       "lon": -5.034,
       "sample_lat": 51.67499923706055,
       "sample_lon": -5.025000095367432,
-      "temperature_c": 17.3,
+      "temperature_c": 17.1,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -129,7 +129,7 @@
       "lon": -0.3998,
       "sample_lat": 54.275001525878906,
       "sample_lon": -0.375,
-      "temperature_c": 15.3,
+      "temperature_c": 14.7,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -142,7 +142,7 @@
       "lon": -1.423,
       "sample_lat": 55.025001525878906,
       "sample_lon": -1.4249999523162842,
-      "temperature_c": 15.6,
+      "temperature_c": 15.5,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -155,7 +155,7 @@
       "lon": -2.0943,
       "sample_lat": 57.125,
       "sample_lon": -2.075000047683716,
-      "temperature_c": 13.4,
+      "temperature_c": 13.5,
       "advice": {
         "label": "Cool",
         "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
@@ -168,7 +168,7 @@
       "lon": -3.5221,
       "sample_lat": 58.57500076293945,
       "sample_lon": -3.5250000953674316,
-      "temperature_c": 12.5,
+      "temperature_c": 12.8,
       "advice": {
         "label": "Cool",
         "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
@@ -181,11 +181,11 @@
       "lon": -5.4718,
       "sample_lat": 56.42499923706055,
       "sample_lon": -5.474999904632568,
-      "temperature_c": 14.1,
+      "temperature_c": 13.9,
       "advice": {
-        "label": "Mild",
-        "advice": "3/2mm full wetsuit is usually suitable.",
-        "collection": "/collections/3mm-wetsuits"
+        "label": "Cool",
+        "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
+        "collection": "/collections/4mm-wetsuits"
       }
     },
     {
@@ -194,7 +194,7 @@
       "lon": -6.6527,
       "sample_lat": 55.224998474121094,
       "sample_lon": -6.675000190734863,
-      "temperature_c": 14.3,
+      "temperature_c": 14.0,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -207,7 +207,7 @@
       "lon": -2.5167,
       "sample_lat": 55.974998474121094,
       "sample_lon": -2.4749999046325684,
-      "temperature_c": 14.3,
+      "temperature_c": 14.5,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -220,7 +220,7 @@
       "lon": -3.2834,
       "sample_lat": 57.724998474121094,
       "sample_lon": -3.2750000953674316,
-      "temperature_c": 14.3,
+      "temperature_c": 14.6,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -259,7 +259,7 @@
       "lon": -1.149,
       "sample_lat": 60.224998474121094,
       "sample_lon": -1.125,
-      "temperature_c": 12.8,
+      "temperature_c": 12.4,
       "advice": {
         "label": "Cool",
         "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
@@ -272,7 +272,7 @@
       "lon": -2.959,
       "sample_lat": 59.025001525878906,
       "sample_lon": -2.9749999046325684,
-      "temperature_c": 12.7,
+      "temperature_c": 12.9,
       "advice": {
         "label": "Cool",
         "advice": "4/3mm or 5/4mm wetsuit recommended, depending on session length.",
@@ -285,7 +285,7 @@
       "lon": -6.2603,
       "sample_lat": 53.32500076293945,
       "sample_lon": -6.074999809265137,
-      "temperature_c": 17.5,
+      "temperature_c": 17.7,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -298,7 +298,7 @@
       "lon": -9.0568,
       "sample_lat": 53.224998474121094,
       "sample_lon": -9.175000190734863,
-      "temperature_c": 16.6,
+      "temperature_c": 16.3,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -337,7 +337,7 @@
       "lon": -4.5481,
       "sample_lat": 54.224998474121094,
       "sample_lon": -4.675000190734863,
-      "temperature_c": 15.0,
+      "temperature_c": 14.8,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -350,7 +350,7 @@
       "lon": -3.5841,
       "sample_lat": 54.525001525878906,
       "sample_lon": -3.7249999046325684,
-      "temperature_c": 18.0,
+      "temperature_c": 17.7,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -363,7 +363,7 @@
       "lon": -3.2276,
       "sample_lat": 54.025001525878906,
       "sample_lon": -3.2750000953674316,
-      "temperature_c": 18.5,
+      "temperature_c": 18.3,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -376,11 +376,11 @@
       "lon": -3.4916,
       "sample_lat": 53.32500076293945,
       "sample_lon": -3.5250000953674316,
-      "temperature_c": 20.1,
+      "temperature_c": 19.1,
       "advice": {
-        "label": "Very warm",
-        "advice": "Shorty wetsuit, rash vest or wetsuit top may be enough.",
-        "collection": "/collections/rash-vests"
+        "label": "Warm",
+        "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
+        "collection": "/collections/summer-wetsuits"
       }
     },
     {
@@ -389,7 +389,7 @@
       "lon": -3.7276,
       "sample_lat": 53.32500076293945,
       "sample_lon": -3.7249999046325684,
-      "temperature_c": 19.6,
+      "temperature_c": 19.0,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -402,7 +402,7 @@
       "lon": -4.633,
       "sample_lat": 53.32500076293945,
       "sample_lon": -4.675000190734863,
-      "temperature_c": 16.5,
+      "temperature_c": 16.6,
       "advice": {
         "label": "Mild",
         "advice": "3/2mm full wetsuit is usually suitable.",
@@ -441,7 +441,7 @@
       "lon": 0.7077,
       "sample_lat": 51.525001525878906,
       "sample_lon": 0.875,
-      "temperature_c": 20.6,
+      "temperature_c": 20.3,
       "advice": {
         "label": "Very warm",
         "advice": "Shorty wetsuit, rash vest or wetsuit top may be enough.",
@@ -454,7 +454,7 @@
       "lon": 1.7305,
       "sample_lat": 52.625,
       "sample_lon": 1.8250000476837158,
-      "temperature_c": 18.6,
+      "temperature_c": 18.1,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -467,7 +467,7 @@
       "lon": 0.8513,
       "sample_lat": 53.025001525878906,
       "sample_lon": 0.875,
-      "temperature_c": 18.1,
+      "temperature_c": 17.8,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -480,7 +480,7 @@
       "lon": -0.0808,
       "sample_lat": 53.57500076293945,
       "sample_lon": 0.02500000037252903,
-      "temperature_c": 18.6,
+      "temperature_c": 18.3,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
@@ -493,7 +493,7 @@
       "lon": -6.3143,
       "sample_lat": 49.92499923706055,
       "sample_lon": -6.375,
-      "temperature_c": 17.9,
+      "temperature_c": 18.0,
       "advice": {
         "label": "Warm",
         "advice": "3/2mm, shorty wetsuit or wetsuit top depending on conditions.",
