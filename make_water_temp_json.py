@@ -6,10 +6,12 @@ import numpy as np
 import xarray as xr
 
 
-INPUT_FILE = Path("data/uk_ostia_sst.nc")
-OUTPUT_FILE = Path("docs/uk-water-temperatures.json")
+UK_INPUT_FILE = Path("data/uk_ostia_sst.nc")
+UK_OUTPUT_FILE = Path("docs/uk-water-temperatures.json")
+FR_INPUT_FILE = Path("data/fr_ostia_sst.nc")
+FR_OUTPUT_FILE = Path("docs/fr-water-temperatures.json")
 
-LOCATIONS = [
+UK_LOCATIONS = [
     {"name": "Bournemouth", "lat": 50.7192, "lon": -1.8808, "sample_lat": 50.66, "sample_lon": -1.88},
     {"name": "Brighton", "lat": 50.8225, "lon": -0.1372, "sample_lat": 50.76, "sample_lon": -0.13},
     {"name": "Plymouth", "lat": 50.3755, "lon": -4.1427, "sample_lat": 50.30, "sample_lon": -4.10},
@@ -50,6 +52,37 @@ LOCATIONS = [
     {"name": "Hugh Town", "lat": 49.9146, "lon": -6.3143, "sample_lat": 49.90, "sample_lon": -6.35},
 ]
 
+FR_LOCATIONS = [
+    {"name": "Dunkerque", "lat": 51.0344, "lon": 2.3768, "sample_lat": 51.10, "sample_lon": 2.20},
+    {"name": "Boulogne-sur-Mer", "lat": 50.7252, "lon": 1.6137, "sample_lat": 50.75, "sample_lon": 1.45},
+    {"name": "Le Touquet", "lat": 50.5244, "lon": 1.5852, "sample_lat": 50.50, "sample_lon": 1.45},
+    {"name": "Dieppe", "lat": 49.9220, "lon": 1.0775, "sample_lat": 49.98, "sample_lon": 1.05},
+    {"name": "Le Havre", "lat": 49.4944, "lon": 0.1079, "sample_lat": 49.55, "sample_lon": 0.02},
+    {"name": "Cherbourg", "lat": 49.6337, "lon": -1.6221, "sample_lat": 49.72, "sample_lon": -1.65},
+    {"name": "Saint-Malo", "lat": 48.6493, "lon": -2.0257, "sample_lat": 48.70, "sample_lon": -2.10},
+    {"name": "Perros-Guirec", "lat": 48.8149, "lon": -3.4430, "sample_lat": 48.87, "sample_lon": -3.48},
+    {"name": "Brest", "lat": 48.3904, "lon": -4.4861, "sample_lat": 48.35, "sample_lon": -4.60},
+    {"name": "La Torche", "lat": 47.8361, "lon": -4.3540, "sample_lat": 47.82, "sample_lon": -4.45},
+    {"name": "Quiberon", "lat": 47.4834, "lon": -3.1196, "sample_lat": 47.44, "sample_lon": -3.17},
+    {"name": "La Baule", "lat": 47.2861, "lon": -2.3908, "sample_lat": 47.25, "sample_lon": -2.48},
+    {"name": "Les Sables-d’Olonne", "lat": 46.4967, "lon": -1.7847, "sample_lat": 46.48, "sample_lon": -1.90},
+    {"name": "La Rochelle", "lat": 46.1603, "lon": -1.1511, "sample_lat": 46.12, "sample_lon": -1.28},
+    {"name": "Royan", "lat": 45.6285, "lon": -1.0288, "sample_lat": 45.60, "sample_lon": -1.18},
+    {"name": "Lacanau", "lat": 44.9780, "lon": -1.1950, "sample_lat": 44.98, "sample_lon": -1.30},
+    {"name": "Arcachon", "lat": 44.6530, "lon": -1.1688, "sample_lat": 44.62, "sample_lon": -1.30},
+    {"name": "Hossegor", "lat": 43.6646, "lon": -1.4439, "sample_lat": 43.65, "sample_lon": -1.55},
+    {"name": "Biarritz", "lat": 43.4832, "lon": -1.5586, "sample_lat": 43.45, "sample_lon": -1.65},
+    {"name": "Collioure", "lat": 42.5268, "lon": 3.0832, "sample_lat": 42.52, "sample_lon": 3.15},
+    {"name": "Gruissan", "lat": 43.1070, "lon": 3.0863, "sample_lat": 43.08, "sample_lon": 3.16},
+    {"name": "Sète", "lat": 43.4018, "lon": 3.6966, "sample_lat": 43.37, "sample_lon": 3.78},
+    {"name": "Marseille", "lat": 43.2965, "lon": 5.3698, "sample_lat": 43.20, "sample_lon": 5.30},
+    {"name": "Toulon", "lat": 43.1242, "lon": 5.9280, "sample_lat": 43.05, "sample_lon": 5.95},
+    {"name": "Nice", "lat": 43.7102, "lon": 7.2620, "sample_lat": 43.68, "sample_lon": 7.35},
+    {"name": "Bastia", "lat": 42.6973, "lon": 9.4509, "sample_lat": 42.70, "sample_lon": 9.55},
+    {"name": "Ajaccio", "lat": 41.9192, "lon": 8.7386, "sample_lat": 41.90, "sample_lon": 8.62},
+    {"name": "Bonifacio", "lat": 41.3874, "lon": 9.1594, "sample_lat": 41.35, "sample_lon": 9.18},
+]
+
 
 def wetsuit_advice(temp_c: float) -> dict:
     if temp_c < 8:
@@ -88,6 +121,44 @@ def wetsuit_advice(temp_c: float) -> dict:
         "collection": "/collections/rash-vests",
     }
 
+
+def wetsuit_advice_fr(temp_c: float) -> dict:
+    if temp_c < 8:
+        return {
+            "label": "Très froide",
+            "advice": "Combinaison hiver 5 ou 6 mm, chaussons, gants et cagoule recommandés.",
+            "collection": "/collections/winter-wetsuits",
+        }
+    if temp_c < 11:
+        return {
+            "label": "Froide",
+            "advice": "Combinaison hiver 5 mm avec chaussons, gants et cagoule recommandée.",
+            "collection": "/collections/5mm-wetsuits",
+        }
+    if temp_c < 14:
+        return {
+            "label": "Fraîche",
+            "advice": "Combinaison 4/3 mm ou 5/4 mm recommandée selon la durée de la session.",
+            "collection": "/collections/4mm-wetsuits",
+        }
+    if temp_c < 17:
+        return {
+            "label": "Douce",
+            "advice": "Une combinaison intégrale 3/2 mm convient généralement.",
+            "collection": "/collections/3mm-wetsuits",
+        }
+    if temp_c < 20:
+        return {
+            "label": "Chaude",
+            "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
+            "collection": "/collections/summer-wetsuits",
+        }
+    return {
+        "label": "Très chaude",
+        "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
+        "collection": "/collections/rash-vests",
+    }
+
 def get_nearest_valid_sst_c(sst, latitude, longitude, search_radius=3):
     """
     Try the nearest grid cell first.
@@ -116,8 +187,8 @@ def get_nearest_valid_sst_c(sst, latitude, longitude, search_radius=3):
 
     return None, None, None
     
-def main():
-    ds = xr.open_dataset(INPUT_FILE)
+def build_json(input_file, output_file, locations, advice_function, note):
+    ds = xr.open_dataset(input_file)
     sst = ds["analysed_sst"]
 
     data_time = None
@@ -128,7 +199,7 @@ def main():
 
     results = []
 
-    for loc in LOCATIONS:
+    for loc in locations:
         sample_lat = loc.get("sample_lat", loc["lat"])
         sample_lon = loc.get("sample_lon", loc["lon"])
 
@@ -142,7 +213,7 @@ def main():
         if temp_c is None:
             advice = None
         else:
-            advice = wetsuit_advice(temp_c)
+            advice = advice_function(temp_c)
 
         results.append({
             "location": loc["name"],
@@ -160,14 +231,31 @@ def main():
         "source": "Copernicus Marine OSTIA / Met Office",
         "product_id": "SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001",
         "dataset_id": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
-        "note": "Daily sea surface temperature estimates. Local beach readings may vary.",
+        "note": note,
         "locations": results,
     }
 
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(output, indent=2), encoding="utf-8")
+    output_file.parent.mkdir(parents=True, exist_ok=True)
+    output_file.write_text(json.dumps(output, indent=2, ensure_ascii=False), encoding="utf-8")
 
-    print(f"Saved {OUTPUT_FILE}")
+    print(f"Saved {output_file}")
+
+
+def main():
+    build_json(
+        UK_INPUT_FILE,
+        UK_OUTPUT_FILE,
+        UK_LOCATIONS,
+        wetsuit_advice,
+        "Daily sea surface temperature estimates. Local beach readings may vary.",
+    )
+    build_json(
+        FR_INPUT_FILE,
+        FR_OUTPUT_FILE,
+        FR_LOCATIONS,
+        wetsuit_advice_fr,
+        "Estimations quotidiennes de la température de surface de la mer. Les relevés locaux peuvent varier.",
+    )
 
 
 if __name__ == "__main__":
