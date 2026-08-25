@@ -45,6 +45,19 @@ jobs:
             --output-filename uk_ostia_sst.nc \
             --overwrite
 
+      - name: Download latest France OSTIA SST subset
+        run: |
+          copernicusmarine subset \
+            --dataset-id METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2 \
+            --variable analysed_sst \
+            --minimum-longitude -6 \
+            --maximum-longitude 10 \
+            --minimum-latitude 41 \
+            --maximum-latitude 52 \
+            --output-directory ./data \
+            --output-filename fr_ostia_sst.nc \
+            --overwrite      
+
       - name: Build JSON
         run: |
           python make_water_temp_json.py
