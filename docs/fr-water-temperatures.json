@@ -1,6 +1,6 @@
 {
-  "updated_utc": "2026-09-02T12:04:18.472545+00:00",
-  "data_time_utc": "2026-09-01T00:00:00.000000000",
+  "updated_utc": "2026-09-03T12:03:40.830422+00:00",
+  "data_time_utc": "2026-09-02T00:00:00.000000000",
   "source": "Copernicus Marine OSTIA / Met Office",
   "product_id": "SST_GLO_SST_L4_NRT_OBSERVATIONS_010_001",
   "dataset_id": "METOFFICE-GLO-SST-L4-NRT-OBS-SST-V2",
@@ -25,11 +25,11 @@
       "lon": 1.6137,
       "sample_lat": 50.724998474121094,
       "sample_lon": 1.475000023841858,
-      "temperature_c": 20.2,
+      "temperature_c": 19.9,
       "advice": {
-        "label": "Très chaude",
-        "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
-        "collection": "/collections/rash-vests"
+        "label": "Chaude",
+        "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
+        "collection": "/collections/summer-wetsuits"
       }
     },
     {
@@ -38,7 +38,7 @@
       "lon": 1.5852,
       "sample_lat": 50.474998474121094,
       "sample_lon": 1.475000023841858,
-      "temperature_c": 20.1,
+      "temperature_c": 20.2,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -51,7 +51,7 @@
       "lon": 1.0775,
       "sample_lat": 49.974998474121094,
       "sample_lon": 1.024999976158142,
-      "temperature_c": 20.3,
+      "temperature_c": 20.0,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -64,7 +64,7 @@
       "lon": 0.1079,
       "sample_lat": 49.525001525878906,
       "sample_lon": 0.02500000037252903,
-      "temperature_c": 20.3,
+      "temperature_c": 20.4,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -90,7 +90,7 @@
       "lon": -2.0257,
       "sample_lat": 48.724998474121094,
       "sample_lon": -2.075000047683716,
-      "temperature_c": 19.9,
+      "temperature_c": 19.7,
       "advice": {
         "label": "Chaude",
         "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
@@ -103,7 +103,7 @@
       "lon": -3.443,
       "sample_lat": 48.875,
       "sample_lon": -3.4749999046325684,
-      "temperature_c": 17.4,
+      "temperature_c": 17.3,
       "advice": {
         "label": "Chaude",
         "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
@@ -116,7 +116,7 @@
       "lon": -4.4861,
       "sample_lat": 48.32500076293945,
       "sample_lon": -4.625,
-      "temperature_c": 17.6,
+      "temperature_c": 17.4,
       "advice": {
         "label": "Chaude",
         "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
@@ -129,7 +129,7 @@
       "lon": -4.354,
       "sample_lat": 47.82500076293945,
       "sample_lon": -4.425000190734863,
-      "temperature_c": 18.3,
+      "temperature_c": 18.5,
       "advice": {
         "label": "Chaude",
         "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
@@ -142,7 +142,7 @@
       "lon": -3.1196,
       "sample_lat": 47.42499923706055,
       "sample_lon": -3.174999952316284,
-      "temperature_c": 18.6,
+      "temperature_c": 18.4,
       "advice": {
         "label": "Chaude",
         "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
@@ -155,7 +155,7 @@
       "lon": -2.3908,
       "sample_lat": 47.224998474121094,
       "sample_lon": -2.4749999046325684,
-      "temperature_c": 18.8,
+      "temperature_c": 19.4,
       "advice": {
         "label": "Chaude",
         "advice": "Combinaison 3/2 mm, shorty ou top néoprène selon les conditions.",
@@ -168,7 +168,7 @@
       "lon": -1.7847,
       "sample_lat": 46.474998474121094,
       "sample_lon": -1.9249999523162842,
-      "temperature_c": 20.4,
+      "temperature_c": 20.9,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -181,7 +181,7 @@
       "lon": -1.1511,
       "sample_lat": 46.125,
       "sample_lon": -1.274999976158142,
-      "temperature_c": 21.2,
+      "temperature_c": 21.4,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -194,7 +194,7 @@
       "lon": -1.0288,
       "sample_lat": 45.57500076293945,
       "sample_lon": -1.1749999523162842,
-      "temperature_c": 22.7,
+      "temperature_c": 22.5,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -220,7 +220,7 @@
       "lon": -1.1688,
       "sample_lat": 44.625,
       "sample_lon": -1.274999976158142,
-      "temperature_c": 22.8,
+      "temperature_c": 22.5,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -233,7 +233,7 @@
       "lon": -1.4439,
       "sample_lat": 43.67499923706055,
       "sample_lon": -1.524999976158142,
-      "temperature_c": 23.3,
+      "temperature_c": 22.7,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -246,7 +246,7 @@
       "lon": -1.5586,
       "sample_lat": 43.474998474121094,
       "sample_lon": -1.6749999523162842,
-      "temperature_c": 23.2,
+      "temperature_c": 23.3,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -259,7 +259,7 @@
       "lon": 3.0832,
       "sample_lat": 42.525001525878906,
       "sample_lon": 3.174999952316284,
-      "temperature_c": 24.2,
+      "temperature_c": 24.8,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -285,7 +285,7 @@
       "lon": 3.6966,
       "sample_lat": 43.375,
       "sample_lon": 3.7750000953674316,
-      "temperature_c": 24.3,
+      "temperature_c": 24.6,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -298,7 +298,7 @@
       "lon": 5.3698,
       "sample_lat": 43.224998474121094,
       "sample_lon": 5.324999809265137,
-      "temperature_c": 24.3,
+      "temperature_c": 24.4,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -311,7 +311,7 @@
       "lon": 5.928,
       "sample_lat": 43.025001525878906,
       "sample_lon": 5.925000190734863,
-      "temperature_c": 24.5,
+      "temperature_c": 24.6,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -324,7 +324,7 @@
       "lon": 7.262,
       "sample_lat": 43.67499923706055,
       "sample_lon": 7.324999809265137,
-      "temperature_c": 27.4,
+      "temperature_c": 27.3,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -337,7 +337,7 @@
       "lon": 9.4509,
       "sample_lat": 42.724998474121094,
       "sample_lon": 9.574999809265137,
-      "temperature_c": 27.8,
+      "temperature_c": 28.1,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
@@ -363,7 +363,7 @@
       "lon": 9.1594,
       "sample_lat": 41.32500076293945,
       "sample_lon": 9.175000190734863,
-      "temperature_c": 27.5,
+      "temperature_c": 27.4,
       "advice": {
         "label": "Très chaude",
         "advice": "Un shorty, un lycra ou un top néoprène peut suffire.",
